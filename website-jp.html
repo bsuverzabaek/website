@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="web_script.js"></script>
+		<link rel="stylesheet" href="web_stylesheet.css">
+		<title>私のウェブサイト</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	</head>
+	<body>
+		<header id="web_title">
+			<h1>私のウェブページへようこそ!</h1>
+		</header>
+
+		
+		<section id="nav_bar">
+			<button type="button" id="first_button">学歴と経歴</button>
+			<button type="button" id="skills_button">テクニカルスキル</button>
+			<button type="button" id="contact_button">連絡先</button>
+			<button type="button" id="gallery_button">ギャラリー</button>
+
+			<div class="dropdown">
+				<button onclick="drop_func()" class="dropbtn" id="arrow">言語 &#9660</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="website-en.html">English</a>
+				</div>	
+			</div>
+		</section>
+
+		<section id="about_me" class="section_info">
+			<br><br>
+			<img src="portrait.png">
+			<div>スベルザベック ブルーノ</div>
+			<h2>自己紹介</h2>
+			<p>この度早稲田大学を卒業し、ITエンジニアとしてのキャリアをジャンプスタートさせるために、「仕事も遊びも一生懸命」をモットーに就職活動に励んでいる毎日です。成長思考のマインドセットを持ち、学び続ける事によって、スキルと経験を積み重ねながら、みなさんと一緒に楽しく仕事ができる事を夢に描いています。</p>
+			<br>
+			<p>大学生活を日本で過ごしながら新しい事を学び、そして考える時間が持てた事は本当に私にとって貴重な経験でした。ヒスパニックとアジアンのハーフとして育った私は常に自分のアイデンティティについて疑問を持っていましたが、学生時代に沢山旅行をしたり、人と交流していく内にアイデンティティは人種から来るものではなく、人それぞれの価値観や印象、経験、性格、趣味、そして生まれながらに与えられた素質そのもので私自身だと言う事に気づく事ができました。若干<script>age_func(new　Date(1998, 9, 13));</script>歳の私ですが、これからキャリアと私自身がどのように成長していくかを皆さんと共有できれば幸いです。日々努力していきたいと思います。宜しくお願いします。</p>
+			<br>
+			<h3>趣味:</h3>
+			<ul>
+				<li>映画観賞</li>
+				<li>読書 (主にノンフィクション)</li>
+				<li>ジム通い</li>
+				<li>旅行</li>
+			</ul>
+		</section>
+
+		<section class="section_info" id="edu_and_xp">
+			<h2>学歴と経歴</h2>
+			<h3>学歴</h3>
+			<ul>
+				<li>
+					<div>早稲田大学 (2016 - 2020)</div>
+					<div>理工学部 - 情報理工・情報通信専攻</div>
+					<div>東京、日本</div>
+				</li>
+			</ul>
+			
+			<h3>プロフェッショナルコース</h3>
+			<ul>
+				<li>
+					<div>Oracle Cloud Infrastructure Foundations 2020 Associate</div>
+				</li>
+				<li>
+					<div>SQL for Data Science (IBM via Edx)</div>
+				</li>
+				<li>
+					<div>Introduction to Cloud Development with HTML, CSS, and JavaScript (IBM via Edx)</div>
+				</li>
+			</ul>
+
+			<h3>プロジェクトと研究室</h3>
+			<ul>
+				<li>
+					利息計算機
+					<ul>
+						<li>
+							フロントエンドの開発に使用されるウェブアプリケーションを作成するために基本的なスキル、知識、およびテクノロジーを取り入れた
+						</li>
+						<li>
+							Gitを持ちいてバージョン管理をした
+						</li>
+						<li>
+							<a href="https://github.com/bsuverzabaek/simple_interest_calculator" target="_blank">Githubを見るには、こちらをクリックして下さい</a>
+						</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					嶋本研究室 (2019 - 2020)
+					<ul>
+						<li>
+							光信号による呼吸検知用センサーを開発した；精度とユーザーインターフェイスが大幅に改善した
+						</li>
+						<li>
+							Arduino、Python、およびその他の様々なハードウェアデバイス/テクノロジーを上手く利用した
+						</li>
+						<li>
+							テクノロジーに関する新規および既存の専門知識を取得した；チームメイトに知識と技術スキルを共有した
+						</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					メカトロニクスラボ A (2018)
+					<ul>
+						<li>
+							電子機器、センサー、センサー信号処理、コントローラー、アクチュエーターに関する様々な新しいスキルと知識を習得した
+						</li>
+						<li>
+							メカトロニクスの基礎を取り入れて、他の学生が作成したロボットと競争するラインフォローロボットを作成した
+						</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					理工学基礎実験 2A (2018)
+					<ul>
+						<li>
+							物理的および工学的実験を行い、説得力のある調査結果のプレゼンテーションを発表した
+						</li>
+						<li>
+							科学的なレポートを作成するスキルが上達した
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section class="section_info" id="skills">
+			<h2>テクニカルスキル</h2>
+			<h3>プログラミング言語</h3>
+			<ul>
+				<li>C</li>
+				<li>Java</li>
+				<li>Python</li>
+				<ul>
+					<li>Pandas</li>
+					<li>Matplotlib</li>
+					<li>Sci-kit learn</li>
+					<li>Numpy</li>
+				</ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>SQL</li>
+				<li>FORTRAN</li>
+			</ul>
+			<h3>ソフトウェア・テクノロジー</h3>
+			<ul>
+				<li>エクセル</li>
+				<ul>
+					<li>ピボットテーブル</li>
+					<li>ダッシュボード</li>
+					<li>SUMIFS関数</li>
+					<li>条件付き書式</li>
+				</ul>
+				<li>パワーポイント</li>
+				<li>Git/GitHub</li>
+				<ul>
+					<li>フォーク</li>
+					<li>プルリクエスト</li>
+					<li>リポジトリを作ること</li>
+					<li>ファイルをステージングすること</li>
+					<li>ファイルをコミットすること</li>
+					<li>ファイルをプッシュすること</li>
+				</ul>
+				<li>Django</li>
+				<ul>
+					<li>新しいプロジェクトディレクトリを作成すること</li>
+					<li>開発サーバを起動すること</li>
+					<li>新しいアプリケーションを作成すること</li>
+				</ul>
+				<li>Sublime Text</li>
+				<li>Eclipse</li>
+				<li>Arduino</li>
+				<ul>
+					<li>回路を作ること</li>
+					<li>Arduino IDE</li>
+				</ul>
+			</ul>
+			<h3>ソフトスキル</h3>
+			<ul>
+				<li>チームメイトと良い関係を築き働きやすい環境を作ること</li>
+				<li>細かい事によく気がつく</li>
+				<li>整理整頓が得意</li>
+				<li>成長思考のマインドセット</li>
+				<li>常に新しい事を学びたい</li>
+			</ul>
+		</section>
+
+		<section class="section_info" id="contact">
+			<h2>連絡先</h2>
+			<ul>
+				<li x-ms-format-detection="none">電話番号: +1-720-469-6565</li>
+				<li>メールアドレス: brunosuverza@gmail.com</li>
+				<li><a href="https://www.linkedin.com/in/brunosuverzabaek" target="_blank">
+					LinkedInプロファイル
+				</a></li>
+			</ul>
+		</section>
+
+		<section class="section_info" id="gallery">
+			<h2>ギャラリー</h2>
+			<div>*是非旅行先で撮った写真をご覧下さい！</div>
+			<div>**詳しい旅行先情報は写真をクリックするとご覧になれます</div>
+			<br>
+
+			<div id="photos">
+				<div class="pic">
+					<a href="https://www.waseda.jp/top/" target="_blank">
+						<img class="px_538" src="IMG_0794.jpeg">
+						<div class="text">早稲田大学の入学式</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://borderless.teamlab.art/jp/" target="_blank">
+						<img class="px_538" src="IMG_1221.jpg">
+						<div class="text">チームラボボーダレス</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://yuuma7.com/マヤ文明と太陽のコラボ！ククルカンの降臨に参/" target="_blank">
+						<img class="px_538" src="IMG_0004.JPG">
+						<div class="text">ククルカンの神殿</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/中華民国総統府" target="_blank">
+						<img class="px_303" src="IMG_1244.jpg">
+						<div class="text">中華民国総統府</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/東京スカイツリー" target="_blank">
+						<img id="skytree" src="IMAG0181.jpg">
+						<div class="text">東京スカイツリー</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/平和公園" target="_blank">
+						<img id="peace_park" src="IMAG0709.jpg">
+						<div class="text">長崎平和公園</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/原爆ドーム" target="_blank">
+						<img class="px_303" src="IMG_0970.jpg">
+						<div class="text">広島原爆ドーム</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/厳島神社" target="_blank">
+						<img class="px_303" src="IMG_1073.jpg">
+						<div class="text">広島の厳島神社</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/台北101" target="_blank">
+						<img class="px_500" src="IMG_1313.jpg">
+						<div class="text">台北１０１</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.chibajinja.com" target="_blank">
+						<img class="px_303" src="IMG_1186.jpg">
+						<div class="text">千葉神社</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://setouchifinder.com/ja/detail/19957" target="_blank">
+						<img class="px_500" src="IMG_1071.jpg">
+						<div class="text">カッコいい層侶の赤ちゃん</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.travelbook.co.jp/spot/34374" target="_blank">
+						<img class="px_303" src="IMG_0006.JPG">
+						<div class="text">ツォンパントリ</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/グラバー園" target="_blank">
+						<img class="px_227" src="IMAG0771.jpg">
+						<div class="text">長崎のグラバー園</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/広島城" target="_blank">
+						<img class="px_303" src="IMG_0996.jpg">
+						<div class="text">広島城</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/縮景園" target="_blank">
+						<img class="px_303" src="IMG_1096.jpg">
+						<div class="text">広島の縮景園</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/中正紀念堂" target="_blank">
+						<img class="px_538" src="IMG_1253.jpg">
+						<div class="text">中正紀念堂</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/行天宮" target="_blank">
+						<img class="px_303" src="IMG_1333.jpg">
+						<div class="text">台北の行天宮</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/士林夜市" target="_blank">			<img class="px_303" src="IMG_1276.jpg">
+						<div class="text">士林夜市</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/上野恩賜公園" target="_blank">
+						<img class="px_227" src="IMAG0401.jpg">
+						<div class="text">上野公園の桜</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/南蔵院_(福岡県篠栗町)" target="_blank">
+						<img class="px_227" src="IMAG0915.jpg">
+						<div class="text">福岡の南蔵院</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.miyajima.or.jp/sightseeing/ss_ootorii.html" target="_blank">
+						<img class="px_303" src="IMG_1014.jpg">
+						<div class="text">厳島神社の鳥居</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/竹原市" target="_blank">
+						<img class="px_303" src="IMG_1108.jpg">
+						<div class="text">竹原</div>
+					</a>
+				</div>	
+				<div class="pic">	
+					<a href="http://www.visiting-japan.com/ja/articles/events/j13sb-meiji-jingu-aki-taisai.htm" target="_blank">		
+						<img class="px_303" src="IMG_0883.jpeg">
+						<div class="text">明治神宮の秋の大祭</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/江の島" target="_blank">
+						<img class="px_227" src="IMAG0454.jpg">
+						<div class="text">江ノ島の日没</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://uminaka-park.jp" target="_blank">
+						<img class="px_227" src="IMAG0934.jpg">
+						<div class="text">海の中道海浜公園</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/大聖院_(宮島)" target="_blank">
+						<img class="px_538" id="daisho_in" src="IMG_1041.jpg">
+						<div class="text">広島の大聖院</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/陽明山" target="_blank">
+						<img class="px_303" src="IMG_1282.jpg">
+						<div class="text">台北の陽明山国立公園</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/饒河街観光夜市" target="_blank">
+						<img id="raohe" src="IMG_1450.jpg">
+						<div class="text">台北の饒河街夜市</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://ja.wikipedia.org/wiki/淡水区" target="_blank">
+						<img class="px_303" src="IMG_1344.jpg">
+						<div class="text">台湾の淡水</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section_info">
+			<button type="button" onclick="back_to_top()">トップへ</button>
+		</section>
+
+		<footer id="foot">
+			<script>copyright_func();</script>
+		</footer>
+	</body>
+</html>

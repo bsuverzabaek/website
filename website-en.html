@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="web_script.js"></script>
+		<link rel="stylesheet" href="web_stylesheet.css">
+		<title>My Website</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	</head>
+	<body>
+		<header id="web_title">
+			<h1>Welcome to My Website!</h1>
+		</header>
+		
+		<section id="nav_bar">
+			<button type="button" id="first_button">Education & Experience</button>
+			<button type="button" id="skills_button">Skills</button>
+			<button type="button" id="contact_button">Contact Info</button>
+			<button type="button" id="gallery_button">Gallery</button>
+
+			<div class="dropdown">
+				<button onclick="drop_func()" class="dropbtn" id="arrow">Language &#9660</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="website-jp.html">日本語</a>
+				</div>	
+			</div>
+		</section>
+
+		<section id="about_me" class="section_info">
+			<br><br>
+			<img src="portrait.png">
+			<div>Bruno Suverza-Baek</div>
+			<h2>About Me</h2>
+			<p>Having recently graduated from Waseda University, I'm looking for an opportunity to jumpstart my career.
+			I have a lifestyle philosophy of "work hard, play hard."
+			I also work with a growth-oriented mindset, which means with time and effort, I know I can improve and keep learning. With my skills and experience, I hope to earn the pleasure of working with you.</p>
+			<br>
+			<p>As a half-hispanic and half-asian person, diversity and identity has always been an important part of my life. Like many people of mixed race, I felt that I was not really a part of the hispanic and asian communities. Even though I have engaged with both communities, ate their food, and spoke their languages (although limited), something just did not click.  For a while, I did not know why. Through lots of traveling and pondering, I have come to realize that identity does not come from race alone. It also comes from one's values, experiences, personality, preferences, and image. These qualities, along with the traits I was born with, is what makes me, well, me! Even though I'm only <script>age_func(new Date(1998, 9, 13));</script> years old, I'm excited to see how my identity will progress over the years.</p>
+			<br>
+			<p>I will be grateful if I can share my career and identity's growth with you. I will continue to make an effort until then.</p>
+			<h3>Hobbies:</h3>
+			<ul>
+				<li>Watching Movies</li>
+				<li>Reading Books (Mostly Non-fiction)</li>
+				<li>Physical Exercise</li>
+				<li>Traveling</li>
+			</ul>
+		</section>
+
+		<section class="section_info" id="edu_and_xp">
+			<h2>Education & Experience</h2>
+			<h3>Education</h3>
+			<ul>
+				<li>
+					<div>Waseda University (2016 - 2020)</div>
+					<div>Bachelor of Engineering - Computer Science and Communications Engineering</div>
+					<div>Tokyo, Japan</div>
+				</li>
+			</ul>
+			
+			<h3>Professional Training Courses</h3>
+			<ul>
+				<li>
+					<div>Oracle Cloud Infrastructure Foundations 2020 Associate</div>
+				</li>
+				<li>
+					<div>SQL for Data Science (IBM via Edx)</div>
+				</li>
+				<li>
+					<div>Introduction to Cloud Development with HTML, CSS, and JavaScript (IBM via Edx)</div>
+				</li>
+			</ul>
+
+			<h3>Project and Lab Experience</h3>
+			<ul>
+				<li>
+					Simple Interest Calculator
+					<ul>
+						<li>
+							Incorporated fundamental skills, knowledge, and technologies used for front-end development to create a web application
+						</li>
+						<li>
+							Applied version control via Git to demonstrate skills with this technology
+						</li>
+						<li>
+							<a href="https://github.com/bsuverzabaek/simple_interest_calculator" target="_blank">Click here to see the Github repository</a>
+						</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					Shimamoto Laboratory (2019 - 2020)
+					<ul>
+						<li>
+							Developed a sensor for breath detection via optical signals; Improved the accuracy and user interface significantly
+						</li>
+						<li>
+							Proficiently deployed and utilized Arduino, Python, and various other hardware devices/technologies
+						</li>
+						<li>
+							Gained and maintained expert knowledge in a variety of new and existing technologies; Cascaded knowledge and technical skills to the rest of the team
+						</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					Mechatronics Laboratory A (2018)
+					<ul>
+						<li>
+							Obtained a variety of new skills and knowledge in electronics, sensors, sensor signal processing, controllers, and actuators
+						</li>
+						<li>
+							Incorporated fundamentals of mechatronics to create a line-following robot that raced against robots created by other students
+						</li>
+					</ul>
+				</li>
+				<br>
+				<li>
+					Science & Engineering Laboratory 2A (2018)
+					<ul>
+						<li>
+							Orchestrated experimental techniques and methods that included physical and engineering experiments and facilitating compelling presentations of findings
+						</li>
+						<li>
+							Honed skills in writing scientific reports under strict supervision
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section class="section_info" id="skills">
+			<h2>Skills</h2>
+			<h3>Coding</h3>
+			<ul>
+				<li>C</li>
+				<li>Java</li>
+				<li>Python</li>
+				<ul>
+					<li>Pandas</li>
+					<li>Matplotlib</li>
+					<li>Sci-kit learn</li>
+					<li>Numpy</li>
+				</ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>SQL</li>
+				<li>FORTRAN</li>
+			</ul>
+			<h3>Software/Technologies</h3>
+			<ul>
+				<li>Excel</li>
+				<ul>
+					<li>Pivot Table</li>
+					<li>Dashboard</li>
+					<li>SUMIFS</li>
+					<li>Conditional Formatting</li>
+				</ul>
+				<li>PowerPoint</li>
+				<li>Git/GitHub</li>
+				<ul>
+					<li>Forking</li>
+					<li>Pull Requests</li>
+					<li>Repository Creation</li>
+					<li>Adding Files</li>
+					<li>Committing Files</li>
+					<li>Pushing Files</li>
+				</ul>
+				<li>Django</li>
+				<ul>
+					<li>New Project Directory Creation</li>
+					<li>Project Server Activation</li>
+					<li>New Project App Creation</li>
+				</ul>
+				<li>Sublime Text</li>
+				<li>Eclipse</li>
+				<li>Arduino</li>
+				<ul>
+					<li>Circuitry Creation</li>
+					<li>Arduino IDE</li>
+				</ul>
+			</ul>
+			<h3>Soft Skills</h3>
+			<ul>
+				<li>Form strong relationships with peers to promote teamwork</li>
+				<li>Attention to Detail</li>
+				<li>Organized</li>
+				<li>Growth-Oriented Mindset</li>
+				<li>Constantly yearns to learn new things</li>
+			</ul>
+		</section>
+
+		<section class="section_info" id="contact">
+			<h2>Contact Info</h2>
+			<ul>
+				<li x-ms-format-detection="none">Phone: +1-720-469-6565</li>
+				<li>Email: brunosuverza@gmail.com</li>
+				<li><a href="https://www.linkedin.com/in/brunosuverzabaek" target="_blank">
+					LinkedIn Profile
+				</a></li>
+			</ul>
+		</section>
+
+		<section class="section_info" id="gallery">
+			<h2>Gallery</h2>
+			<div>*Feel free to check out some of the photos I took abroad!</div>
+			<div>**If you would like to learn more about the places featured in these images, please click on the image itself</div>
+			<br>
+
+			<div id="photos">
+				<div class="pic">
+					<a href="https://www.waseda.jp/top/en/" target="_blank">
+						<img class="px_538" src="IMG_0794.jpeg">
+						<div class="text">Entrance Ceremony for Waseda University</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://borderless.teamlab.art" target="_blank">
+						<img class="px_538" src="IMG_1221.jpg">
+						<div class="text">teamLab Borderless</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3002.html" target="_blank">
+						<img class="px_538" src="IMG_1810.jpg">
+						<div class="text">Torii Gate in Meiji Jingu Shrine</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3011.html" target="_blank">
+						<img class="px_303" src="IMG_0770.jpeg">
+						<div class="text">Shinjuku</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3064.html" target="_blank">
+						<img id="skytree" src="IMAG0181.jpg">
+						<div class="text">Tokyo Skytree</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e4400.html" target="_blank">
+						<img id="peace_park" src="IMAG0709.jpg">
+						<div class="text">Nagasaki Peace Park</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://visithiroshima.net/world_heritage/a_bomb_dome/" target="_blank">
+						<img class="px_303" src="IMG_0970.jpg">
+						<div class="text">Hiroshima Atomic Bomb Dome</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3450.html" target="_blank">
+						<img class="px_303" src="IMG_1073.jpg">
+						<div class="text">Itsukushima Shrine in Hiroshima</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://en.wikipedia.org/wiki/Taipei_101" target="_blank">
+						<img class="px_500" src="IMG_1313.jpg">
+						<div class="text">Taipei 101</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://qrtranslator.com/0000006516/000012" target="_blank">
+						<img class="px_303" src="IMG_1186.jpg">
+						<div class="text">Chiba Shrine</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://japanjourneys.jp/hiroshima/miyajima/attractions/temple/knitted-hats-miyajima" target="_blank">
+						<img class="px_500" src="IMG_1071.jpg">
+						<div class="text">Cool Monk Baby</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3031_hills.html" target="_blank">
+						<img class="px_303" src="IMAG0292.jpg">
+						<div class="text">Roppongi Hills</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e4406.html" target="_blank">
+						<img class="px_227" src="IMAG0771.jpg">
+						<div class="text">Nagasaki's Glover Garden</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3402.html" target="_blank">
+						<img class="px_303" src="IMG_0996.jpg">
+						<div class="text">Hiroshima Castle</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3403.html" target="_blank">
+						<img class="px_303" src="IMG_1096.jpg">
+						<div class="text">Shukkeien Garden in Hiroshima</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://guidetotaipei.com/visit/chiang-kai-shek-memorial-hall-中正紀念堂" target="_blank">
+						<img class="px_538" src="IMG_1253.jpg">
+						<div class="text">Chiang Kai-Shek Memorial Hall</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://eng.taiwan.net.tw/m1.aspx?sNo=0002090&id=229" target="_blank">
+						<img class="px_303" src="IMG_1333.jpg">
+						<div class="text">Xingtian Temple in Taipei</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.gotokyo.org/en/destinations/western-tokyo/nakano/index.html" target="_blank">								
+						<img class="px_303" src="IMG_0809.jpeg">
+						<div class="text">A View of Nakano from Above</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3019.html" target="_blank">
+						<img class="px_227" src="IMAG0401.jpg">
+						<div class="text">Cherry Blossoms in Ueno Park</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan.travel/en/spot/2167/" target="_blank">
+						<img class="px_227" src="IMAG0915.jpg">
+						<div class="text">Nanzo-in Temple in Fukuoka</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.miyajima.or.jp/english/spot/spot_ootorii.html" target="_blank">
+						<img class="px_303" src="IMG_1014.jpg">
+						<div class="text">Torii Gate in Itsukushima Shrine</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan.travel/en/spot/870/" target="_blank">
+						<img class="px_303" src="IMG_1108.jpg">
+						<div class="text">Takehara</div>
+					</a>
+				</div>	
+				<div class="pic">	
+					<a href="https://www.japan-talk.com/jt/new/meiji-shrine-autumn-festival" target="_blank">		
+						<img class="px_303" src="IMG_0883.jpeg">
+						<div class="text">Autumn Festival in Meiji Jingu Shrine</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3117.html" target="_blank">
+						<img class="px_227" src="IMAG0454.jpg">
+						<div class="text">Sunset at Enoshima</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e4810.html" target="_blank">
+						<img class="px_227" src="IMAG0934.jpg">
+						<div class="text">Uminonakamichi Seaside Park</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://www.japan-guide.com/e/e3453.html" target="_blank">
+						<img class="px_538" id="daisho_in" src="IMG_1041.jpg">
+						<div class="text">Daisho-in Temple in Hiroshima</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://guidetotaipei.com/visit/yangmingshan-national-park-陽明山-yang-ming-shan-mountain" target="_blank">
+						<img class="px_303" src="IMG_1282.jpg">
+						<div class="text">Yangmingshan National Park in Taipei</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://guidetotaipei.com/visit/raohe-night-market-饒河夜市" target="_blank">
+						<img id="raohe" src="IMG_1450.jpg">
+						<div class="text">Raohe Night Market in Taipei</div>
+					</a>
+				</div>
+				<div class="pic">
+					<a href="https://guidetotaipei.com/visit/tamsui-淡水-danshui" target="_blank">
+						<img class="px_303" src="IMG_1344.jpg">
+						<div class="text">Tamsui District in Taiwan</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section_info">
+			<button type="button" onclick="back_to_top()">Back To Top</button>
+		</section>
+
+		<footer id="foot">
+			<script>copyright_func();</script>
+		</footer>
+	</body>
+</html>
